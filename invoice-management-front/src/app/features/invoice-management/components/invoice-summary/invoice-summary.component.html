@@ -1,0 +1,18 @@
+<mat-card class="card">
+    <mat-card-content>
+      <div class="field flex-column">
+        <span class="number">{{getTotalOwed()}}</span>
+        <span class="subtitle">Total owed</span>
+      </div>
+  
+      <div class="field flex-column">
+        <span class="number">{{getTotalPaidInvoices()}}</span>
+        <span class="subtitle">Paid invoices</span>
+      </div>
+  
+      <div class="field flex-column">
+        <span class="number">{{getTotalUnpaidInvoices()}}</span>
+        <span class="subtitle">Unpaid invoices</span>
+      </div>
+    </mat-card-content>
+  </mat-card>

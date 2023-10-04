@@ -1,0 +1,7 @@
+<div class="flex-row">
+<div class="flex-column">
+    <app-add-edit-invoice (newInvoiceEvent)="addInvoice($event)" (updateInvoiceEvent)="updateInvoice($event)"></app-add-edit-invoice>
+      <app-invoice-summary [Invoices]="Invoices"></app-invoice-summary>
+</div>
+ <app-invoice-table [tableDataSource]="tableDataSource" class="invoice-table"></app-invoice-table>
+</div>

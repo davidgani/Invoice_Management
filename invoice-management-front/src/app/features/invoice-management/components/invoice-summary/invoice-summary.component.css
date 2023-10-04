@@ -1,0 +1,24 @@
+.card {
+    width: 250px;
+    margin-top: 15px;
+    height: 170px;
+    border: 1px solid #ccc; 
+    display: inline-block;
+  }
+  
+  .field {
+    text-align: center;
+    padding: 2px;
+  }
+  
+  .number {
+    font-weight: bold;
+    font-size: 20px;
+    color: #1aa839;
+  }
+  
+  .subtitle {
+    color: #555;
+    font-size: 14px;
+  }
+  

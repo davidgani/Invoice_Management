@@ -1,0 +1,24 @@
+.invoice-table {
+    float: right;
+    margin: 1.5%;
+}
+
+.big-button {
+    padding: 40px 40px; /* Adjust padding for the button size */
+    font-size: 18px; /* Adjust font size as needed */
+    background-color: #007bff; /* Change to your desired button color */
+    color: #fff; /* Button text color */
+    border-radius: 450px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Style the big button on hover */
+  .big-button:hover {
+    background-color: #0056b3; /* Change to a darker shade for hover effect */
+  }
+
+  .mat-divider {
+    width: 100%;
+    background-color: rgba(176, 179, 182, 0.452);
+  }

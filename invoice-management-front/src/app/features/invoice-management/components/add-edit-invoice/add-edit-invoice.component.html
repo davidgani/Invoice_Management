@@ -1,0 +1,28 @@
+<div class="floating-container flex-column">
+<form class="flex-column" [formGroup]="form">  
+  <mat-form-field appearance="fill">
+      <mat-label>Customer Name</mat-label>
+      <input matInput formControlName="customerName" placeholder="Customer Name" required>
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Date</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="date" placeholder="Choose a date" required>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Amount</mat-label>
+      <input matInput formControlName="amount" placeholder="Amount" required>
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Status</mat-label>
+      <mat-select formControlName="status" placeholder="Select Status" required>
+        <mat-option *ngFor="let option of statusOptions" [value]="option">{{ option }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" (click)="submitForm()" [disabled]="!form.valid">Submit</button>
+  </form>
+</div>
